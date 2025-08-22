@@ -31,11 +31,10 @@ Instead of a live video stream (impossible with LoRa’s low bandwidth), the sys
   
 
 ## 🚀 Results
-- Successfully transmitted JPEG snapshots over **>1 km range**.
-![Received Image](first_successful_pic.jpg)
+- Successfully transmitted JPEG snapshots over **1 km range**.
 - First valid images reconstructed after tuning inter-packet delays.  
-- Reliability >95% with optimized settings.  
-
+- Reliability >80% with optimized settings.  
+![Received Image](first_successful_pic.jpg)
 ## 👥 Authors
 - Fatimazahra El Meady  
 - Anass El Kabbaj  
