@@ -1,7 +1,7 @@
 #include "esp_camera.h"
 #include <Arduino.h>
 
-#define TXD_PIN 1
+#define TXD_PIN 1  // Try not to link noth of the GNDs if it is not working
 #define RXD_PIN 3
 
 void setup() {
