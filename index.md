@@ -33,5 +33,5 @@ It was carried out as a **thematical project** during our **second year (Master 
 
 ## Contact / Credits
 - **Authors:** Fatimazahra El Meady, Anass El Kabbaj  
-- **Association:** EIRSPACE – C’Space 2025
+- **Association:** EIRSPACE 2025
 
