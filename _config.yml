@@ -1,0 +1,11 @@
+title: TX_RX_esp32CAM_MKRWAN
+description: Long-range image transmission via LoRa (ESP32-CAM + MKR WAN, 434 MHz)
+# Use one of GitHub's built-in themes:
+theme: jekyll-theme-cayman
+
+# If your site renders under a subpath (it will), set baseurl to your repo name:
+baseurl: "/TX_RX_esp32CAM_MKRWAN"
+
+# Optional site metadata
+author: "Fatimazahra El Meady & Anass El Kabbaj"
+lang: en
