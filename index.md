@@ -8,7 +8,7 @@ title: Image Transmission
 This project demonstrates **image transmission** for a small experimental rocket, using an **ESP32-CAM** for image capture and **Arduino MKR WAN 1300** for LoRa-based transmission and reception.  
 Instead of a live video stream, the system captures **JPEG snapshots** and sends them as **255-byte fragments** over **434 MHz** LoRa.
 
-> 🔗 Full code & docs live in this repository on GitHub.
+> 🔗 Full code live in this repository on GitHub.
 
 ## Quick Links
 - 📄 **Project README**: [README.md](./README.md)
