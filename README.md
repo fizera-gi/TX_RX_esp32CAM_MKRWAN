@@ -35,6 +35,7 @@ Instead of a live video stream (impossible with LoRa’s low bandwidth), the sys
 - First valid images reconstructed after tuning inter-packet delays.  
 - Reliability >80% with optimized settings.  
 ![Received Image](first_successful_pic.jpg)
+![Received Image](photo_receiverd1.jpg)
 ## 👥 Authors
 - Fatimazahra El Meady  
 - Anass El Kabbaj  
