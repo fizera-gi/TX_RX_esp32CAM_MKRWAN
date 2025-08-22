@@ -26,6 +26,7 @@ Instead of a live video stream, the system captures **JPEG snapshots** and sends
 - Successful reception and reconstruction of JPEG snapshots
 - Reliability **80%** after tuning delays and filtering duplicates
 ![Received Image](first_successful_pic.jpg)
+![Received Image](photo_receiverd1.jpg)
 
 ## Team & Context
 My teammate and I developed this project as part of the **EIRSPACE** association team.  
