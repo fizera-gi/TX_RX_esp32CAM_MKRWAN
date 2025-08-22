@@ -28,7 +28,7 @@ Instead of a live video stream (impossible with LoRa’s low bandwidth), the sys
 - `ESP32_TX.ino` → Code for ESP32-CAM (capture + UART transfer).  
 - `MKRWAN_TX.ino` → Code for MKR WAN (transmitter – fragmentation + LoRa send).  
 - `MKRWAN_RX.ino` → Code for MKR WAN (receiver – reassembly + Serial output).  
-- `Projet_thematique.pdf` → Project report (French, detailed methodology & results).  
+  
 
 ## 🚀 Results
 - Successfully transmitted JPEG snapshots over **>1 km range**.  
