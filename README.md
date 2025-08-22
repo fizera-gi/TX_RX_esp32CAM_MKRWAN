@@ -1,4 +1,4 @@
-# Small Rocket – Image Transmission via LoRa (ESP32-CAM + MKRWAN)
+# Small Rocket – Image Transmission via LoRa (ESP32-CAM + MKRWAN):
 
 ## 📖 Overview
 This project demonstrates **long-range image transmission** for a small experimental rocket, using an **ESP32-CAM** for image capture and an **Arduino MKR WAN 1300** for LoRa-based transmission and reception.  
