@@ -14,8 +14,8 @@ Instead of a live video stream (impossible with LoRa’s low bandwidth), the sys
 ## 🔗 System Architecture
 1. **ESP32-CAM** captures an image → sends raw JPEG buffer over **UART**.  
 2. **MKR WAN (TX)** fragments the image into **255-byte packets** → transmits them via **LoRa 434 MHz**.  
-3. **MKR WAN (RX)** receives the fragments → reassembles the JPEG → forwards to PC via **Serial USB**.  
-4. **Python post-processing** filters duplicates and saves the received buffer as a `.jpg` file. (The python code is not included in this project but you can easily write a simple python code " hex -> .JPEG " 
+3. **MKR WAN (RX)** receives the fragments → forwards to PC via **Serial USB**.  
+4. **Python post-processing** Takes the HEX fragments and reassembles the JPEG then filters the duplicates and saves the received buffer as a `.jpg` file. (The python code is not included in this project but you can easily write a simple python code " hex -> .JPEG " 
 
 
 ## 📡 Transmission Settings
@@ -27,7 +27,8 @@ Instead of a live video stream (impossible with LoRa’s low bandwidth), the sys
 ## 📂 Repository Contents
 - `ESP32_TX.ino` → Code for ESP32-CAM (capture + UART transfer).  
 - `MKRWAN_TX.ino` → Code for MKR WAN (transmitter – fragmentation + LoRa send).  
-- `MKRWAN_RX.ino` → Code for MKR WAN (receiver – reassembly + Serial output).  
+- `MKRWAN_RX.ino` → Code for MKR WAN (receiver + Serial output).
+- `Projet_thematique.pdf` → The project report (In french)
   
 
 ## 🚀 Results
