@@ -17,7 +17,7 @@ Instead of a live video stream, the system captures **JPEG snapshots** and sends
 - 📷 **ESP32-CAM (Capture + UART TX)**: [`ESP32_TX.ino`](./ESP32_TX.ino)  
 - 📡 **MKR WAN (LoRa Transmitter)**: [`MKRWAN_TX.ino`](./MKRWAN_TX.ino)  
 - 📥 **MKR WAN (LoRa Receiver)**: [`MKRWAN_RX.ino`](./MKRWAN_RX.ino)  
-- 🧾 **Project Report (FR)**: ['Projet_thematique.pdf'] (./Projet_thematique.pdf)
+- 🧾 **Project Report (FR)**: [`Projet_thematique.pdf`](./Projet_thematique.pdf)
 
 ---
 
