@@ -94,7 +94,12 @@ body{
 }
 
 /* images */
-img{ max-width:100%; height:auto; border-radius:12px; border:1px solid rgba(77,195,255,.18) }
+img {
+  max-width: 500px;   /* limit to 500px wide */
+  width: 100%;        /* scale to fit container */
+  height: auto;       /* keep aspect ratio */
+}
+
 
 /* cards (optional) */
 .card{

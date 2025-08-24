@@ -1,50 +1,95 @@
 <!doctype html>
-<html lang="{{ site.lang | default: 'en' }}">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   {% if site.baseurl %}<base href="{{ site.baseurl }}/">{% endif %}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Monospace, techy look -->
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    header {
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 14px 20px;
+      position: sticky;
+      top: 0;
+    }
+    header .wrap {
+      max-width: 960px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header a {
+      text-decoration: none;
+      color: #2563eb;
+      margin-left: 16px;
+      font-weight: 600;
+    }
+    main {
+      max-width: 800px;
+      margin: 32px auto;
+      padding: 0 16px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+      margin-top: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      padding: 8px 12px;
+      border: 1px solid #e5e7eb;
+    }
+    th {
+      background: #f3f4f6;
+      text-align: left;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #6b7280;
+      margin: 40px 0 20px;
+    }
+  </style>
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <header class="site-header">
+  <header>
     <div class="wrap">
-      <a class="brand" href="{{ '/' | relative_url }}">
-        <!-- “LED” dot -->
-        <span class="led"></span>
-        {{ site.title }}
-      </a>
-      <nav class="nav">
+      <strong><a href="{{ '/' | relative_url }}">{{ site.title }}</a></strong>
+      <nav>
         <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/pages/getting-started.html' | relative_url }}">Getting Started</a>
-        <a href="{{ '/README.html' | relative_url }}">README</a>
-        <a href="{{ '/Projet_thematique.pdf' | relative_url }}">Report (FR)</a>
+        <a href="{{ '/README.md' | relative_url }}">README</a>
       </nav>
     </div>
-    <!-- Thin “trace” line -->
-    <div class="trace-line"></div>
   </header>
-
-  <main class="container">
-    {{ content }}
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>© {{ site.time | date: '%Y' }} · {{ site.title }} · Built with Jekyll & GitHub Pages</p>
-      <p class="badges">
-        <span class="badge">LoRa 434 MHz</span>
-        <span class="badge">ESP32‑CAM</span>
-        <span class="badge">MKR WAN</span>
-        <span class="badge">Telemetry</span>
-      </p>
+  <main>
+    <div class="card">
+      {{ content }}
     </div>
+  </main>
+  <footer>
+    © {{ site.time | date: '%Y' }} · {{ site.title }}
   </footer>
 </body>
 </html>
