@@ -8,7 +8,7 @@ title: Image Transmission
 This project demonstrates **image transmission** for a small experimental rocket, using an **ESP32-CAM** for image capture and **Arduino MKR WAN 1300** for LoRa-based transmission and reception.  
 Instead of a live video stream, the system captures **JPEG snapshots** and sends them as **255-byte fragments** over **434 MHz** LoRa.
 
-> 🔗 Full code live in this repository on GitHub.
+> 🔗 Full code live in this repository on [GitHub](https://github.com/fizera-gi/TX_RX_esp32CAM_MKRWAN).
 
 ---
 
@@ -17,18 +17,17 @@ Instead of a live video stream, the system captures **JPEG snapshots** and sends
 - 📷 **ESP32-CAM (Capture + UART TX)**: [`ESP32_TX.ino`](./ESP32_TX.ino)  
 - 📡 **MKR WAN (LoRa Transmitter)**: [`MKRWAN_TX.ino`](./MKRWAN_TX.ino)  
 - 📥 **MKR WAN (LoRa Receiver)**: [`MKRWAN_RX.ino`](./MKRWAN_RX.ino)  
-- 🧾 **Project Report (FR)**: [Projet_thematique.pdf](./Projet_thematique.pdf)
 
 ---
 
 ## ⚙️ Key Settings
-| Parameter              | Value |
-|------------------------|-------|
-| Frequency              | **434 MHz** |
-| Packet size            | **255 bytes** |
-| Inter-packet delay     | **~200–400 ms** (tuned to reduce losses & respect duty-cycle) |
-| Typical time per image | **~30–40 s** |
-| Reliability (tuned)    | **~80%** |
+
+
+Frequency            :   **434 MHz** 
+Packet size          :  **255 bytes** 
+Inter-packet delay   :  **~200–400 ms** (tuned to reduce losses & respect duty-cycle) 
+Typical time per image : **~30–40 s** 
+Reliability            : **~80%** 
 
 ---
 
@@ -43,8 +42,8 @@ Instead of a live video stream, the system captures **JPEG snapshots** and sends
     <p align="center"><em>First successful received image</em></p>
   </div>
   <div style="flex:1; min-width:280px;">
-    <img src="{{ '/assets/photo_receiverd1.jpg' | relative_url }}" alt="Another received image" style="width:100%; max-width:400px; border-radius:8px;">
-    <p align="center"><em>Another reconstructed image</em></p>
+    <img src="{{ '/assets/photo_receiverd1.jpg' | relative_url }}" alt="Another captured image" style="width:100%; max-width:400px; border-radius:8px;">
+    <p align="center"><em>First successful captured image</em></p>
   </div>
 </div>
 
