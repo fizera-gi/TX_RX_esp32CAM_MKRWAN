@@ -25,9 +25,13 @@ Instead of a live video stream, the system captures **JPEG snapshots** and sends
 
 
 Frequency            :   **434 MHz** 
+
 Packet size          :  **255 bytes** 
+
 Inter-packet delay   :  **~200–400 ms** (tuned to reduce losses & respect duty-cycle) 
+
 Typical time per image : **~30–40 s** 
+
 Reliability            : **~80%** 
 
 ---
